@@ -4,6 +4,7 @@ phases:
     commands: 
       - "echo Build started on `date`"
       - "echo Building the Docker image..."
+      - "ls"
       - "docker build -t vickyrv2206/nginx ."
       - "docker tag vickyrv2206/nginx vickyrv2206/nginx:latest"
   post_build: 
